@@ -1,0 +1,52 @@
+n=int(input('emter any number'))
+if n%2==0:
+    print("invalid")
+else:
+    for i in range(n//2):
+        for j in range((3*n+n//2+1)):
+            print(" ",end="")
+        for j in range(i+1):
+            print("*",end="")    
+        print()  
+    for i in range(n//2):
+        for j in range(n+n//2+1):
+            print(" ",end="")
+        for j in range(n):
+            print("*",end="") 
+        for j in range(n):
+            if i==0:
+                print("@",end="")
+            else:
+                print(" ",end="")  
+        for j in range(n//2-i+1):
+                print("*",end="")                
+        print() 
+    for i in range((n//2)+1):
+        for j in range(n//2-i):
+            print(" ",end="") 
+        for j in range(i+1):
+            print("*",end="") 
+        for j in range(n):
+            if i==n//2:
+                print("@",end="")
+            else:
+                print(" ",end="")   
+        for j in range(n):
+            print("*",end="") 
+        for j in range(n):
+            print(" ",end="")  
+        for j in range(n//3):
+            if i==0 and j==0:
+                print("*",end="")
+            else:
+                print(" ",end="")           
+                
+                        
+        print()    
+    for i in range(n//2):
+        for j in range(i+1):
+            print(" ",end="")   
+        for j in range(n//2 -i):
+            print("*",end="")
+        print()             
+            
